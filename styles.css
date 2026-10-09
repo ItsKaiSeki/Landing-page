@@ -3,56 +3,224 @@
     margin: 0px;
 }
 
+/* top handles the header and the second section containing signup, allows me to change color of the 
+background as desired */
 
 .top {
     background: #1F2937;
 }
 
+/* header and logo can be adjusted via these two containers */
+
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .logo {
     font-size: 24px;
+    font-weight: 900;
     color: #F9FAF8;;
 }
 
-ul li {
-display: inline;
+/* This handles the alignment of the different sections. while the individuals handle separate alignments. */
+.header, .signup,
+.infocenter, .quote,
+.call, .footer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* :Links can be adjusted moved and spaced out with these two,  personally 
+I like the spacing but can be adjusted via gap, font boldness can be adjusted via 
+font weight */
+
+ul {
+    display:flex; 
+    gap: 25px;
+    list-style-type: none;
+}
 
 a { 
-    text-decoration: none;;
+    text-decoration: none;
     color: #F9FAF8;
-    padding: 5px;
+    font-weight: 600;  
 }
 
-}
 
 .signup { 
     display: flex;
-    border: solid 2px red;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
 }
 
+/* left handles the text and button */
 .left {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 3px green;
-    padding: 10px;
-    gap: 10px;
-
-    
+    gap:8px;
+    flex:1;
 }
 
 .left h1 {
+    font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
-    font-size: 48px; 
 }
 
 .left p {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+/* meanwhile right handles the photo  */
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.right img {background: #E5E7EB;
+    border-radius: 10px;
+}
+
+/* button handles the styling for both the button son the page */
+button {
+    background: #3882F6;
+    color: #F9FAF8;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+
+}
+
+/* this section handles the 4 cards and info section */
+.info {
+    background:white;
+    
+}
+
+.infocenter {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoheader {
+    text-align: center;
+    font-size: 26px;
+    color: #1F2937;
+    font-weight: 900;
+    padding-bottom:15px;
+    margin: 15px;
+}
+
+/* handles all the card alignment */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card { 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+/* this handles the font under the photos,  */
+.card p {
+    font-size: 14px;
+    color: #4B5563;
+    text-align: center;
+    padding: 10px;
+}
+
+/* this will let you controll the size of the image, quicker than hardcoded */
+.card img {
+    border-radius: 10px;
+    width: 125px;
+    height: 125px;
+
+}
+
+/* this section handles the quote section pretty small and simple */
+.quotecard {
+    background: #E5E7EB;
+    padding: 50px 0px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-shrink:1;
+}
+
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    width: 800px;
+}
+
+.quote-author {
+    font-weight: 900;
+    display: flex;
+    align-self: flex-end;
+}
+
+/* this secotion controls ths call to action section  */
+.call { 
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+}
+
+.signupcard {
+    display: flex;
+    background: #3882F6;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0px 20px;
+    padding: 40px 70px;
+}
+
+.cardleft {
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardright button {
+    border: solid 2px white;
+}
+
+/* this handles the footer alignment and adjustments */
+.footercard {
+     background: #1F2937;
+     padding: 25px;
+}
+
+.footer {
+    display: flex;
+    color:#F9FAF8;
+    justify-content: center;
+    align-items: center;
 }
 
