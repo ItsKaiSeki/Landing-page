@@ -4,20 +4,17 @@
     box-sizing: border-box;
 }
 
-/* top handles the header and the second section containing signup, allows me to change color of the 
+/* Top handles the header and the second section containing signup, allows me to change color of the 
 background as desired */
-
 .top {
     background: #1F2937;
 }
 
-/* header and logo can be adjusted via these two containers */
-
+/*  Header and logo can be adjusted via these two containers */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
@@ -38,7 +35,6 @@ background as desired */
 /* :Links can be adjusted moved and spaced out with these two,  personally 
 I like the spacing but can be adjusted via gap, font boldness can be adjusted via 
 font weight */
-
 ul {
     display:flex; 
     gap: 25px;
@@ -62,7 +58,7 @@ a {
    
 }
 
-/* left handles the text and button */
+/* Left handles the text and button */
 .left {
     display:flex;
     flex-direction: column;
@@ -82,7 +78,7 @@ a {
     color: #E5E7EB;
 }
 
-/* meanwhile right handles the photo  */
+/* Meanwhile right handles the photo  */
 .right {
     display: flex;
     justify-content: center;
@@ -94,16 +90,16 @@ a {
     background: #E5E7EB;
     border-radius: 10px;
     max-width: 100%;
-    height:auto;
+    height: auto;
 }
 
-/* added to make it more mobile friendly */
-.left, right {
+/* Added to make it more mobile friendly */
+.left .right {
     flex: 1;
     min-width: 280px;
 }
 
-/* button handles the styling for both the button son the page */
+/* Button handles the styling for both the buttons on the page */
 button {
     background: #3882F6;
     color: #F9FAF8;
@@ -114,10 +110,9 @@ button {
 
 }
 
-/* this section handles the 4 cards and info section */
+/* This section handles the 4 cards and info section */
 .info {
     background:white;
-    
 }
 
 .infocenter {
@@ -134,7 +129,7 @@ button {
     margin: 15px;
 }
 
-/* handles all the card alignment */
+/* Handles all the card alignment */
 .cards {
     display: flex;
     justify-content: space-between;
@@ -152,7 +147,7 @@ button {
     min-width: 150px;
 }
 
-/* this handles the font under the photos,  */
+/* This handles the font under the photos,  */
 .card p {
     font-size: 14px;
     color: #4B5563;
@@ -160,7 +155,7 @@ button {
     padding: 10px;
 }
 
-/* this will let you controll the size of the image, quicker than hardcoded */
+/* This will let you control the size of the image, quicker than hardcoded */
 .card img {
     border-radius: 10px;
     width: 125px;
@@ -168,7 +163,7 @@ button {
 
 }
 
-/* this section handles the quote section pretty small and simple */
+/* This section handles the quote section pretty small and simple */
 .quotecard {
     background: #E5E7EB;
     padding: 50px 0px;
@@ -198,7 +193,7 @@ button {
     align-self: flex-end;
 }
 
-/* this secotion controls ths call to action section  */
+/* This section controls ths call to action section  */
 .call { 
     display: flex;
     justify-content: center;
@@ -214,6 +209,7 @@ button {
     flex: 1;
     margin: 0px 20px;
     padding: 40px 70px;
+    flex-wrap: wrap;
 }
 
 .cardleft {
@@ -227,7 +223,7 @@ button {
     border: solid 2px white;
 }
 
-/* this handles the footer alignment and adjustments */
+/* This handles the footer alignment and adjustments */
 .footercard {
      background: #1F2937;
      padding: 25px;
